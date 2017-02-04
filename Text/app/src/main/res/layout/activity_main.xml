@@ -11,27 +11,51 @@
     tools:context="com.example.evangoss.text.MainActivity">
 
     <TextView
-        android:id="@+id/heading"
+        android:id="@+id/tvHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:text="@string/hello"
-        android:textSize="36sp" />
+        android:textSize="24sp"
+        />
 
-    <ScrollView
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeading"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Full Name"
+        />
+
+    <EditText
+        android:id="@+id/txtName"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/heading">
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/tvName"
+        />
 
-        <TextView
-            android:id="@+id/longText"
-            android:text="@string/longtext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/heading"
-            android:layout_centerHorizontal="true" />
-    </ScrollView>
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvName"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Email"
+        />
 
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/tvName"
+        />
+    
 </RelativeLayout>
