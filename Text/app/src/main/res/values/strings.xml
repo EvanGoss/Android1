@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Text</string>
+    <string name="hello">Hello from Saddleback College Android</string>
+    <string name="longtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis augue sed sem mattis tristique non tincidunt sapien. Phasellus nec libero eu ligula aliquet feugiat. Quisque malesuada convallis augue quis pretium. Vestibulum velit arcu, dignissim at egestas et, rutrum a tortor. Quisque placerat dolor a eros luctus volutpat. Morbi justo eros, sagittis eget tristique dapibus, sollicitudin ac felis. Nam dignissim ligula diam, vitae euismod purus tempus sit amet. Nulla ultricies at sapien sit amet rutrum. Donec pulvinar aliquam velit sit amet dignissim. Donec tristique dolor sit amet ipsum gravida varius ut et elit. Etiam vel nibh lacus.</string>
+</resources>
