@@ -57,5 +57,25 @@
         android:layout_marginLeft="10dp"
         android:layout_toEndOf="@+id/tvName"
         />
-    
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEmail"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="15dp"
+        android:text="Password"
+        />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_alignBottom="@+id/tvPassword"
+        android:layout_toEndOf="@id/tvName"
+        android:layout_marginLeft="10dp"
+        />
+
 </RelativeLayout>
