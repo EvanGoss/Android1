@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         LinearLayout layout = (LinearLayout) findViewById(R.id.myLayout);
         for (int i=0; i < 3; i++) {
             Button button = new Button(this);
-            button.setText("Button " + (i+1));
+            button.setText(getString(R.string.button_text) + (i+1));
             button.setLayoutParams(layoutParams);
             layout.addView(button);
         }
