@@ -2,6 +2,7 @@ package com.example.evangoss.events;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -51,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        popToast("My New Toast");
+        String msg = "This is my" + System.lineSeparator() + "New Alert Dialog Box";
+        popAlert("My New Alert Dialog", msg);
     }
 
     private void popToast(String text) {
