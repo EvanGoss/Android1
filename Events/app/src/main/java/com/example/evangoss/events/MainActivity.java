@@ -67,11 +67,11 @@ public class MainActivity extends AppCompatActivity {
                 new android.support.v7.app.AlertDialog.Builder(this);
         builder.setTitle(title)
                 .setMessage(message)
-                .setIcon(ContextCompat.getDrawable(this, android.R.drawable.ic_dialog_info))
+                .setIcon(ContextCompat.getDrawable(this, android.R.drawable.ic_menu_info_details))
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.dismiss();
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
                     }
                 })
                 .create()
