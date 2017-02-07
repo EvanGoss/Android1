@@ -1,6 +1,7 @@
 package com.example.evangoss.events;
 
 import android.content.DialogInterface;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +27,25 @@ public class MainActivity extends AppCompatActivity {
 
         button1.setOnClickListener(sharedClickListener);
         button2.setOnClickListener(sharedClickListener);
+
+        EditText editText = (EditText) findViewById(R.id.editName);
+        if (getResources().getConfiguration().orientation == 1) {
+            editText.setText("Portrait");
+        } else {
+            editText.setText("Landscape");
+        }
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        EditText editText = (EditText) findViewById(R.id.editName);
+
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            editText.setText("Portrait");
+        } else {
+            editText.setText("Landscape");
+        }
     }
 
     private View.OnClickListener sharedClickListener = new View.OnClickListener() {
@@ -40,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     };
-    
+
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button1:
