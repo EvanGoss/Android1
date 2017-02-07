@@ -29,6 +29,7 @@
         android:layout_below="@id/button1"
         android:layout_centerHorizontal="true"
         android:text="From Code"
+        android:onClick="onClick"
         />
 
 </RelativeLayout>
