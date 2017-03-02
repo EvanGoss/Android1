@@ -19,16 +19,16 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
 
         ImageView imageView = (ImageView) findViewById(R.id.imagePlayer);
-//        Button imageButton = (Button) findViewById(R.id.btnShowPlayer);
+        Button imageButton = (Button) findViewById(R.id.btnShowPlayer);
 
         if (currentImage == "playerswing") {
             imageView.setImageResource(R.drawable.playerpitch);
             currentImage = "playerpitch";
-//            imageButton.setText("Show Hit");
+            imageButton.setText("Show Hit");
         } else {
             imageView.setImageResource(R.drawable.playerswing);
             currentImage = "playerswing";
-//            imageButton.setText("Show Pitch");
+            imageButton.setText("Show Pitch");
         }
     }
 }
