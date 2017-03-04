@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_pitch"
+        android:orderInCategory="101"
+        android:title="Pitch"
+        />
+    <item
+        android:id="@+id/menu_swing"
+        android:orderInCategory="102"
+        android:title="Swing"
+        />
+    <item
+        android:id="@+id/menu_flag"
+        android:orderInCategory="103"
+        android:title="Flag"
+        />
+</menu>
