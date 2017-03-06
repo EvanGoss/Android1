@@ -20,7 +20,6 @@
         <activity
             android:name=".DetailActivity"
             android:label="Detail Activity"
-            android:parentActivityName=".MainActivity"
             >
         </activity>
 
